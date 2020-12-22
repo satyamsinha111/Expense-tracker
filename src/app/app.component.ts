@@ -14,7 +14,9 @@ export class AppComponent {
   constructor() {
     const data: Expense[] = JSON.parse(localStorage.getItem('Expense'));
     console.log('Current data', data);
-    this.expenseList = [...data];
+    if (data) {
+      this.expenseList = [...data];
+    }
   }
 
   addExpense(expense: Expense) {
