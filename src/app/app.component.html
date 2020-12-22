@@ -1,8 +1,5 @@
 <div class="container-fluid">
-  <app-header
-    [totalAmount]="getTotalAmount()"
-    (onChangeTotal)="getTotalAmount($event)"
-  ></app-header>
+  <app-header [totalAmount]="getTotalAmount()"></app-header>
   <app-form (onExpenseAdded)="addExpense($event)"></app-form>
   <div class="container pt-4">
     <ul class="list-group">

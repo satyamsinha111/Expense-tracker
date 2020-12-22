@@ -8,8 +8,7 @@
         id="item"
         aria-describedby="itemHelp"
         placeholder="Enter item name"
-        [ngModel]="item"
-        (input)="handleItemChange($event)"
+        [(ngModel)]="item"
         name="item"
       />
     </div>
@@ -22,8 +21,7 @@
         class="form-control"
         id="amount"
         placeholder="Amount"
-        [ngModel]="amount"
-        (input)="handleAmountChange($event)"
+        [(ngModel)]="amount"
         name="amount"
       />
     </div>
